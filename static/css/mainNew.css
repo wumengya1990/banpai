@@ -1,0 +1,319 @@
+/*头部信息内容*/
+.SC_topBar{ background: rgba(0,0,0,0.1); color:#FFFFFF; height:80px; line-height: 80px;}
+.SC_topBar div{ font-size:30px; letter-spacing: 0.1em;}
+.SC_class{ float: left; padding: 0 20px;}
+.SC_classState{ float: right; padding: 0 20px;}
+.SC_time{ overflow: hidden; text-align: center;}
+
+/* 扫脸登录内容 */
+.SC_recognitionBox { position: absolute; width: 800px; height: 450px; left: 0; top: 0; right: 0; bottom: 0; margin: auto; background: #395367; overflow: hidden;}
+.SC_Tips{ position: absolute; width: 500px; min-height:100px; max-height: 300px; left: 0; top: 0; right: 0; bottom: 0; margin: auto; padding: 790px 0 0;}
+.SC_Tips h3{ height:80px; line-height: 80px; border-bottom: 1px solid #919da7; color: #FFFFFF; font-size:30px;}
+.SC_Tips h3 span{ border-left: 5px solid #5abda3; padding: 0 20px;}
+.SC_Tips p{ color: #FFFFFF; font-size: 28px;}
+.SC_result{ position: absolute; width: 500px; min-height:100px; max-height: 300px; left: 0; top: 0; right: 0; bottom: 0; margin: auto; padding:300px 0 0 1100px}
+.SC_result h3{ height:80px; line-height: 80px; border-bottom: 1px solid #919da7; color: #FFFFFF; font-size:30px;}
+.SC_result h3 span{ border-left: 5px solid #5abda3; padding: 0 20px;}
+.SC_result dl{ font-size:28px; color: #FFFFFF; padding: 20px;}
+.SC_result dl dt{ float: left; width: 220px; overflow: hidden; white-space: nowrap;}
+.SC_result dl dd{ overflow: hidden;}
+
+/* 签到内容 */
+.SC_signInMainRight{ float:right; padding: 0 50px; margin: 50px 0 ; width: 700px; border-left: 1px solid #919da7;}
+.SC_signInMainRight h3{ height: 80px; line-height: 80px;  border-bottom: 1px solid #919da7; color: #FFFFFF; font-size:30px; font-weight: normal;}
+.SC_signInMainRight h3 span{border-left: 5px solid #5abda3; padding: 0 20px;}
+.SC_signInMainRight p{ color: #FFFFFF; font-size: 28px; padding: 20px;}
+.SC_signInMainRight .resultBox{ font-size: 28px;}
+.SC_signInMainRight .authenticationBox{ width: 700px; height: 420px; background: #395367; margin: 40px 0;}
+.SC_signInMainRight .authenticationBox img{ width: 700px; height: 420px;}
+.SC_signInMainRight .resultBox{ padding:20px 0; color: #FFFFFF; }
+.SC_signInMainRight .resultBox span{ display: inline-block; text-align: center; width: 33%;}
+
+.SC_signInMainLeft{ overflow: hidden; padding: 50px 0 50px 50px;}
+.SC_signInMainLeft h3{ height: 80px; line-height: 80px; color: #FFFFFF; font-size:30px; font-weight: normal;}
+.SC_signInMainLeft h3 span{border-left: 5px solid #5abda3; padding: 0 20px;}
+.SC_signInMainLeft .SC_signInMainLeft_1 dl{ float: left; margin: 20px 50px 0 0; color: #FFFFFF; text-align: center;}
+.SC_signInMainLeft .SC_signInMainLeft_1 dl dd{ font-size: 26px;}
+.SC_signInMainLeft .SC_signInMainLeft_1 dl dd span{ display: block; padding: 10px 0 0;}
+.SC_signInMainLeft .SC_signInMainLeft_1 dl dd em{ color: #ff0000}
+.SC_signInMainLeft .SC_signInMainLeft_1 dl dd em.have{ color: #5ab9a3;}
+
+
+/* 签到统计内容 */
+.SC_attendance{ float: right; border-left: 1px solid #597890; padding: 20px; margin: 50px 0; width: 300px;}
+.SC_attendance h3{ color: #FFFFFF; text-align: center; font-size:50px; font-weight:normal;}
+.SC_attendance h3 em{ padding: 0 15px;}
+.SC_attendance h3 span{ color: #5ab9a3;}
+.SC_attendance1{ padding: 30px 0 50px;}
+.SC_attendance dl{ border-left:3px solid #eaeaea; text-align: center; font-size:28px; margin:60px 100px; color: #FFFFFF; }
+.SC_attendance dl dd{ font-size: 36px}
+.SC_attendance dl.state1{ border-left:3px solid #5ab9a3;}
+.SC_attendance dl.state1 dd{ color: #5ab9a3;}
+.SC_attendance dl.state2{ border-left:3px solid #ed974b;}
+.SC_attendance dl.state2 dd{ color: #ed974b;}
+.SC_attendance dl.state3{ border-left:3px solid #d0706c;}
+.SC_attendance dl.state3 dd{ color: #d0706c;}
+
+/* 课表查看样式 */
+.SC_timetableRihgt{ float: right; width: 370px; padding: 0 50px; margin: 50px 0 ; border-left: 1px solid #919da7;}
+.SC_timetableRihgt h4{ height:80px; line-height: 80px; border-bottom: 1px solid #919da7; font-weight: normal; color: #FFFFFF; font-size:30px;}
+.SC_timetableRihgt h4 span{ border-left: 5px solid #ed974b; padding: 0 20px;}
+.SC_timetableRihgt ul{ height: 800px; overflow: hidden; overflow-y: auto;}
+.SC_timetableRihgt ul li{ font-size: 24px; color: #FFFFFF; padding: 20px 0 0;}
+
+.SC_timetableLeft{ overflow: hidden; padding: 50px;}
+.SC_timetableLeft h3{ height: 80px; line-height: 80px; color: #FFFFFF; font-size:30px; font-weight: normal;}
+.SC_timetableLeft h3 span{border-left: 5px solid #5abda3; padding: 0 20px;}
+.SC_tableStyle{ border: 1px solid #919da7; background: rgba(0,0,0,0.1); border-collapse: collapse;}
+.SC_tableStyle th{ background: #3b5c77; color: #FFFFFF; height:80px; font-size: 24px; font-weight: normal;}
+.SC_tableStyle td{ text-align: center; color: #FFFFFF; height: 87px; font-size: 25px;}
+.SC_tableStyle_borderLine th,.SC_tableStyle_borderLine td{ border: 1px solid #919da7;}
+
+.SC_timetableMine .SC_timetableRihgt ul{ height: 750px; overflow: hidden; overflow-y: auto;}
+.SC_timetableMine .SC_tableStyle td{ text-align: center; color: #FFFFFF; height:93px; font-size: 25px;}
+
+/* 活动查看 */
+.SC_activityList h3{ height:80px; line-height: 80px; border-bottom: 1px solid #919da7; font-weight: normal; color: #FFFFFF; font-size:30px; margin: 20px 50px;}
+.SC_activityList h3 span{ border-left: 5px solid #ed974b; padding: 0 20px;}
+.SC_activityScroll{ height: 800px; overflow: hidden; overflow-y: auto; margin:50px 0 0}
+.SC_activityBox{ float:left; width: 417px; background: #ffffff; margin: 0 0 50px 50px; border-radius: 5px; overflow: hidden;}
+.SC_activityBox .activityImg{ width: 417px; height: 267px;}
+.SC_activityBox .activityImg img{ width: 100%; height: 100%;}
+.SC_activityBox .activityDescribe .useImg{ float: left; width: 60px; height: 60px; overflow: hidden; border-radius: 50%; margin: 10px;}
+.SC_activityBox .activityDescribe .useImg img{ width: 100%; height: 100%;}
+.SC_activityBox .activityDescribe .activityCon{ overflow: hidden;}
+.SC_activityBox .activityDescribe .activityCon h4{ font-size:18px; padding: 10px 0;}
+.SC_activityBox .activityDescribe .activityCon p{ margin: 0 0 10px; height: 83px; overflow: hidden; font-size: 18px;}
+.SC_activityBox .activityDescribe .activityCon .participants span{ float: left; margin: 13px 10px 0 0; color:#999999; font-size:16px;}
+.SC_activityBox .activityDescribe .activityCon .participants .participantsList{ overflow: hidden; padding: 0 0 10px;}
+.SC_activityBox .activityDescribe .activityCon .participants .participantsList a{ float: left; width: 50px; height: 50px; border-radius: 50%; overflow: hidden; margin: 0 10px 0 0; position: relative;}
+.SC_activityBox .activityDescribe .activityCon .participants .participantsList a span{ position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; margin: auto; border-radius: 50%; background: rgba(0,0,0,0.6); color: #FFFFFF; text-align: center; line-height: 50px; font-size: 24px}
+.SC_activityBox .viewDetails{ display: block; background: #5abda3; color: #FFFFFF; font-size: 22px; height: 50px; line-height: 50px; text-align: center;}
+
+/*班级检查*/
+.SC_classExaminationM h3{ height:80px; line-height: 80px; border-bottom: 1px solid #919da7; font-weight: normal; color: #FFFFFF; font-size:30px; margin: 20px 50px;}
+.SC_classExaminationM h3 span{ border-left: 5px solid #ed974b; padding: 0 20px;}
+.SC_classExaminationM .history{ padding: 0 50px; font-size:26px; color: #5ab9a3;}
+.SC_rankingList{ float: right; background: rgba(0,0,0,0.1); width: 560px; margin: 20px 50px 0;}
+.SC_rankingList h4{ border-bottom: 1px solid #eaeaea; height: 80px; line-height: 80px;}
+.SC_rankingList h4 span{ float: left;  width: 50%; text-align: center; color: #ffffff; font-size:28px; font-weight: normal;}
+.SC_rankingList h4 span.on{ color: #F7AC01;}
+.SC_rankingList .rankingListM ul{padding: 20px 0;}
+.SC_rankingList .rankingListM ul li{ color: #FFFFFF; font-size: 28px; height:80px; line-height: 80px;}
+.SC_rankingList .rankingListM ul li span{ float: right; width: 50%; text-align: center;}
+.SC_rankingList .rankingListM ul li p{ overflow: hidden; text-align: center;}
+.SC_rankingList .rankingListM ul li:nth-child(1) p{background: url(../images/NO1_03.png) no-repeat scroll 20px  center}
+.SC_rankingList .rankingListM ul li:nth-child(2) p{background: url(../images/NO2_06.png) no-repeat scroll 20px center}
+.SC_rankingList .rankingListM ul li:nth-child(3) p{background: url(../images/NO3_09.png) no-repeat scroll 20px center}
+.SC_inspectTable{ overflow: hidden; margin: 20px 0 0 50px; position: relative; height: 760px;}
+.SC_inspectTable .fixTop{ position: absolute; top:0; left:0; right: 0; bottom: auto; margin: auto;}
+.SC_inspectTable .tableScroll{ height: 100%; overflow: hidden; overflow-y: auto;}
+
+/*班级空间内容*/
+.SC_classSpaceContent{ background: rgba(0,0,0,0.1); height: 840px; margin: 0 50px; overflow: hidden; overflow-y: auto;}
+.SC_LeaveMessageBox .userHead .userImg{ float:left; width: 100px; height: 100px; margin:20px}
+.SC_LeaveMessageBox .userHead h4{ color: #ffffff; font-size: 32px; font-weight: normal; padding: 20px 0 10px;}
+.SC_LeaveMessageBox .userHead p{  color: #999999; font-size: 24px;}
+.SC_LeaveMessageBox .useMessage{ margin:0 20px;}
+.SC_LeaveMessageBox .useMessage .textBox{ color: #ffffff; font-size:26px;}
+.SC_LeaveMessageBox .useMessage .photoBox ul li{ float: left; width:300px; height: 230px; margin: 10px 10px 0 0;}
+.SC_LeaveMessageBox .useMessage .photoBox ul li img{ width: 100%; height: 100%;}
+
+.SC_LeaveMessageBox .leaveBox{ padding: 20px 0 0;}
+.SC_LeaveMessageBox .commenter{ float:left;}
+.SC_LeaveMessageBox .commenter .touxiang{ float:left; width: 80px; height: 80px; margin: 20px;}
+.SC_LeaveMessageBox .commenter .touxiang img{ width: 100%; height: 100%;}
+.SC_LeaveMessageBox .commenter .touxiangMes{ overflow: hidden; color: #ffffff; padding: 0 10px 0 0}
+.SC_LeaveMessageBox .commenter .touxiangMes h4{ color: #ffffff; font-size: 26px; font-weight: normal; padding:25px 0 0;}
+.SC_LeaveMessageBox .commenter .touxiangMes p{ color: #999999;  font-size: 26px;}
+.SC_LeaveMessageBox .leaveMessage{ overflow: hidden; color: #ffffff; font-size: 26px; padding: 20px;}
+.SC_LeaveMessageBox .leaveBoxCon .leaveBoxCon{ margin: 0 0 0 50px;}
+.SC_LeaveMessageBox .moreMessage{ text-align: center; color: #FFFFFF; padding: 20px 0;}
+.SC_LeaveMessageBox .moreMessage a{ color: #ffffff; font-size: 28px; display: block; width:500px; background: rgba(255,255,255,0.1); margin:0 auto; height:60px; line-height: 60px; border-radius:5px;}
+
+/*活动详情*/
+.SC_dynamic .dynamicContent{ background: rgba(0,0,0,0.1); margin: 0 50px;}
+.SC_dynamic .schoolDetailsTop{ text-align: center;}
+.SC_dynamic .schoolDetailsTop h3{ height: 100px; line-height: 100px; border-bottom: 1px solid #eaeaea; margin:0 20px 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #ffffff; font-size:36px; letter-spacing: 0.1em; font-weight: normal;}
+.SC_dynamic .schoolDetailsTop p{  color: #ffffff; margin: 0 0 20px}
+.SC_dynamic .schoolDetailsTop p span{ padding: 0 20px; font-size: 26px;}
+.SC_dynamic .schoolDetailsDown{ padding:0 0 20px;}
+.SC_dynamic .schoolDetailsDown .leftImg{ float: left; width:700px; height: 600px; margin: 0 20px;}
+.SC_dynamic .schoolDetailsDown .leftImg .showImg{ width: 700px; height:400px;}
+.SC_dynamic .schoolDetailsDown .leftImg .showImg img{ width: 100%; height: 100%;}
+.SC_dynamic .schoolDetailsDown .leftImg .showImgList{ width: 100%; overflow: hidden; overflow-x: auto; padding:20px 0; white-space: nowrap;}
+.SC_dynamic .schoolDetailsDown .leftImg .showImgList span{ display: inline-block; position: relative; width:248px; height: 160px;}
+.SC_dynamic .schoolDetailsDown .leftImg .showImgList span img{ width: 100%; height: 100%;}
+.SC_dynamic .schoolDetailsDown .leftImg .showImgList span em{ position: absolute; background: rgba(255,255,255,0.6); left: 0; top:0; right: 0; bottom: 0; margin: auto;}
+.SC_dynamic .schoolDetailsDown .rightMessage{ height: 580px; overflow: hidden; overflow-y: auto; line-height: 2em; color: #ffffff; font-size: 28px; padding: 0 20px 0 0;}
+
+/*班级荣耀*/
+.SC_honor .rightHonorList{ float: right; width:500px; margin: 0 50px; overflow: hidden; background: rgba(0,0,0,0.1); height: 830px;}
+.SC_honor .rightHonorList h4{ height: 80px; line-height: 80px; border-bottom: 1px solid #eaeaea; text-align: center; font-size:32px; color:#F7AC01;}
+.SC_honor .rightHonorList ul{ padding: 20px 0;}
+.SC_honor .rightHonorList ul li{ font-size:28px; color: #ffffff; height: 80px; line-height: 80px;}
+.SC_honor .rightHonorList ul li span{ float: right; width: 50%; text-align: center; }
+.SC_honor .rightHonorList ul li p{overflow: hidden; text-indent: 3em}
+.SC_honor .rightHonorList ul li:nth-child(1) p{background: url(../images/NO1_03.png) no-repeat scroll 30px  center}
+.SC_honor .rightHonorList ul li:nth-child(2) p{background: url(../images/NO2_06.png) no-repeat scroll 30px center}
+.SC_honor .rightHonorList ul li:nth-child(3) p{background: url(../images/NO3_09.png) no-repeat scroll 30px center}
+.SC_honor .rightHonorList ul li:nth-child(1) span{color: #F7AC01;}
+
+.SC_honor .LeftHonorBox{ overflow: hidden; margin: 0 0 0 50px;}
+.SC_honor .LeftHonorBox .choTab{ height: 80px; border-radius:10px; overflow: hidden; background: rgba(0,0,0,0.1); margin: 0 0 20px;}
+.SC_honor .LeftHonorBox .choTab span{ width: 200px; height: 80px; text-align: center; display: inline-block; font-size: 28px; color:#ffffff; line-height: 80px;}
+.SC_honor .LeftHonorBox .choTab span.on{ color: #F7AC01; height: 77px; border-bottom:3px solid #F7AC01;}
+.SC_honor .LeftHonorBox dl{ float: left; background: #ffffff; margin:0 0 20px 20px; width: 400px; border-radius: 10px; overflow: hidden;}
+.SC_honor .LeftHonorBox dl dt{ width: 400px; height: 300px;}
+.SC_honor .LeftHonorBox dl dt img{ width: 100%; height: 100%;}
+.SC_honor .LeftHonorBox dl dd .userImg{  float: left; width:80px; height:80px; border-radius: 50%; overflow: hidden; margin: 10px;}
+.SC_honor .LeftHonorBox dl dd .userImg img{ width: 100%; height: 100%;}
+.SC_honor .LeftHonorBox dl dd h4{ font-size: 26px; color: #333333; padding: 15px 0 0;}
+.SC_honor .LeftHonorBox dl dd p{ font-size: 24px; color: #999999;}
+.SC_honor .choResultBox{ height: 730px; overflow: hidden; overflow-y: auto;}
+
+.SC_honorMy .LeftHonorBox{ overflow: hidden; margin: 0 50px;}
+.SC_honorMy .LeftHonorBox .choTab{ height: 80px; border-radius:10px; overflow: hidden; background: rgba(0,0,0,0.1); margin: 0 0 20px;}
+.SC_honorMy .LeftHonorBox .choTab span{ width: 200px; height: 80px; text-align: center; display: inline-block; font-size: 28px; color:#ffffff; line-height: 80px;}
+.SC_honorMy .LeftHonorBox .choTab span.on{ color: #F7AC01; height: 77px; border-bottom:3px solid #F7AC01;}
+.SC_honorMy .LeftHonorBox dl{ float: left; margin:45px 0 0 45px; width: 400px; overflow: hidden;}
+.SC_honorMy .LeftHonorBox dl dt{ width: 400px; height: 300px;}
+.SC_honorMy .LeftHonorBox dl dt img{ width: 100%; height: 100%;}
+.SC_honorMy .LeftHonorBox dl dd .userImg{  float: left; width:80px; height:80px; border-radius: 50%; overflow: hidden; margin: 10px;}
+.SC_honorMy .LeftHonorBox dl dd .userImg img{ width: 100%; height: 100%;}
+.SC_honorMy .LeftHonorBox dl dd h4{ font-size: 28px; color: #ffffff; text-align: center; background:rgba(0,0,0,0.1); margin:20px 0 0; height: 80px; line-height: 80px;}
+.SC_honorMy .choResultBox{ height: 810px; overflow: hidden; overflow-y: auto;}
+
+
+  /*APP列表*/
+.SC_appList{ height:835px; overflow: hidden; overflow-y: auto; }
+.SC_appList .appList_1 h4{ height:80px; line-height: 80px; font-weight: normal; color: #FFFFFF; font-size:30px; margin: 20px 50px;}
+.SC_appList .appList_1 h4 span{ border-left: 5px solid #ed974b; padding: 0 20px;}
+.SC_appList .appBox dl{ float: left; width: 200px; text-align: center; color: #ffffff; margin: 0 0 0 100px;}
+.SC_appList .appBox dl dt{ position: relative; width:200px; height: 200px; background: rgba(0,0,0,0.1); border-radius: 50%; overflow: hidden;}
+.SC_appList .appBox dl dt img{ width: 105px; height: 105px; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+.SC_appList .appBox dl dd{ font-size: 28px; padding: 20px 0;}
+.SC_LeftLogin{ padding: 0 50px; margin: 50px 0 0;}
+.SC_LeftLogin .userImg{ float:left; margin: 0 20px 0 0;}
+.SC_LeftLogin p{ overflow: hidden; font-size: 32px; color:#FFFFFF; padding: 30px 0 0;}
+
+  /*校园动态*/
+.SC_dynamicM .rightList{ overflow: hidden}
+.SC_dynamicM .leftImgList{ float: left; width: 930px; height: 745px; margin: 30px 50px 0 50px; background: rgba(0,0,0,0.1); position: relative; overflow: hidden;}
+.SC_dynamicM .imgList{ white-space: nowrap; font-size: 0;}
+.SC_dynamicM .leftImgList .imgBox{ display: inline-block; width: 930px; height: 745px;}
+.SC_dynamicM .leftImgList .imgBox img{ width: 100%; height: 100%;}
+.SC_dynamicM .shuoyin{ position: absolute; text-align: center; left: 0; top: auto; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.5); z-index:10; height: 160px;}
+.SC_dynamicM .shuoyin ul{ font-size: 0;}
+.SC_dynamicM .shuoyin ul li{ display: inline-block; width: 165px; height: 120px; border:5px solid #ffffff; margin:15px 5px;}
+.SC_dynamicM .shuoyin ul li img{ width: 100%; height: 100%;}
+.SC_dynamicM .rightList{ margin:50px 50px 0 0;}
+.SC_dynamicM .rightList ul{ height: 745px; overflow: hidden; overflow-y: auto;}
+.SC_dynamicM .rightList ul li{ height: 80px; line-height: 80px; color: #ffffff; font-size: 28px;}
+.SC_dynamicM .rightList ul li a{ display: block; color: #ffffff; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+  /*w我的考勤*/
+.SC_attendanceMine .attendancetable{ margin: 0 50px;}
+.SC_attendanceMine .attendancetable .tableTop{ background: rgba(0,0,0,0.1); font-size: 0;}
+.SC_attendanceMine .attendancetable .tableTop span{ font-size: 32px; color: #ffffff; display: inline-block; height: 80px; line-height: 80px; width: 260px; text-align: center;}
+.SC_attendanceMine .attendancetable .tableBody{ width: 100%; border: 1px solid #eaeaea; height: 830px;}
+.SC_attendanceMine .attendancetable .tableBody>div{ float: left; width:260px; height:166px;}
+.SC_attendanceMine .attendancetable .tableBody>div h4{ text-align: center; color: #ffffff; font-size: 26px; padding: 15px 0 0;}
+.SC_attendanceMine .attendancetable .tableBody>div dl{ width: 230px; margin:10px auto; font-size: 24px;}
+.SC_attendanceMine .attendancetable .tableBody>div dl dt{ float: left; width: 50%; text-align: center; background:rgba(255,255,255,0.1); color: #ffffff; height: 40px; line-height:40px;}
+.SC_attendanceMine .attendancetable .tableBody>div dl dd{ overflow: hidden; text-align: center; background:rgba(0,0,0,0.1); color: #54ab9a; height: 40px; line-height:40px;}
+
+/*学业成绩*/
+.SC_achievementList{ margin:20px 50px 0; height: 770px; overflow: hidden; overflow-y: auto;}
+.SC_achievementList .achievementBox{ float: left; background: rgba(0,0,0,0.1);  width: 432px; margin: 0 30px 30px 0; color: #ffffff; position: relative;}
+.SC_achievementList .achievementBox:nth-child(4n){ margin: 0 0 20px 0;}
+.SC_achievementList .achievementBox h4{ font-size: 28px; text-align:center; line-height: 1.5em; border-bottom: 1px solid #eaeaea; overflow: hidden; height: 90px; padding: 40px;}
+.SC_achievementList .achievementBox .totalScore{ font-size: 26px; text-align: center; height:90px; line-height:90px;}
+.SC_achievementList .achievementBox .disciplineScore{ display: none; border-top:1px solid #eaeaea; position: absolute; z-index: 10;  background: #406683; left: 0; top:261px; right: 0; bottom: auto; margin: auto;}
+.SC_achievementList .achievementBox .disciplineScore .scoreTop span{ height: 50px; background: rgba(0,0,0,0.1); border-bottom:1px solid #eaeaea; display: inline-block; width:144px; text-align: center; font-size: 24px; height:60px; line-height: 60px;}
+.SC_achievementList .achievementBox .disciplineScore ul{ padding: 20px 0;}
+.SC_achievementList .achievementBox .disciplineScore ul li span{ height: 50px; display: inline-block; width:144px; text-align: center; font-size: 24px; height:50px; line-height: 50px;}
+
+/*首页*/
+.SC_noticeBar{ background: rgba(0,0,0,0.1); height:60px; line-height:60px; color: #ffffff; font-size: 26px; padding: 0 20px;}
+.SC_topMessage .classSurvey{ float: left; width: 595px; height: 190px; background: rgba(0,0,0,0.1); margin:0 20px; color: #ffffff; text-align: center; border-radius: 8px;}
+.SC_topMessage .classSurvey dt{ padding: 15px 0;}
+.SC_topMessage .classSurvey dt .userImg{ display: inline-block; width:100px; height: 100px; margin: 0 10px 0 0; vertical-align: middle; border-radius: 50%; overflow: hidden;}
+.SC_topMessage .classSurvey dt .userImg img{ width: 100%; height: 100%;}
+.SC_topMessage .classSurvey dt h4{ font-size: 32px; display: inline-block; padding: 10px 0 0; vertical-align: middle;}
+.SC_topMessage .classSurvey dd{ font-size: 28px;}
+.SC_topMessage .classSurvey dd span{ padding: 0 10px;}
+.SC_topMessage .weather{ float: right; background: rgba(0,0,0,0.1); margin:0 20px; width:430px; height: 190px; border-radius: 8px;}
+.SC_topMessage .weather dl{ float: left; color: #ffffff; width: 200px; text-align: center; padding: 36px 0 0; text-indent: 3em;}
+.SC_topMessage .weather dl dt{ font-size: 45px;}
+.SC_topMessage .weather dl dd{ font-size: 36px; padding: 10px 0 0;}
+.SC_topMessage .weather .weatherImg{ position: relative; overflow: hidden; height: 100%;}
+.SC_topMessage .weather .weatherImg img{ position: absolute; left: 0; top:0; right: 0; bottom: 0; margin: auto;}
+.SC_topMessage .classTime{ overflow: hidden;  background: rgba(0,0,0,0.1); margin: 20px 0 0; height: 190px; border-radius: 8px;}
+.SC_topMessage .classTime .classState{ float: left; border-right: 1px solid #eaeaea; color: #ffffff; text-align: center; width: 300px; margin: 25px 0 0;}
+.SC_topMessage .classTime .classState h4{  font-size: 36px; padding: 10px 0;}
+.SC_topMessage .classTime .classState p{ font-size: 28px;}
+.SC_topMessage .classTime dl{ overflow: hidden; text-align: center; color: #ffffff;}
+.SC_topMessage .classTime dl dt{ font-size: 70px; padding: 30px 0 10px}
+.SC_topMessage .classTime dl dd{ font-size: 24px;}
+
+.SC_noticeList{ background: rgba(0,0,0,0.1); margin: 20px;}
+.SC_noticeList h3{ height: 70px; line-height:70px; padding: 0 20px; border-bottom: 1px solid #eaeaea;}
+.SC_noticeList h3 span{ color: #F7AC01; border-left: 5px solid #F7AC01; padding: 0 20px; font-size: 26px;}
+.SC_noticeList ul{ height: 70px; overflow: hidden; padding: 0 20px;}
+.SC_noticeList ul li{ height: 70px; line-height: 70px; color: #ffffff; font-size: 24px;}
+.SC_indexMessage{ margin: 0 20px;}
+.SC_indexMessage .leftHD{ float: left; width: 862px; height: 525px; position: relative; margin: 0 20px 0 0;}
+.SC_indexMessage .leftHD ul li{ float: left; width: 862px; height: 525px;}
+.SC_indexMessage .leftHD ul li img{ width: 100%; height: 100%;}
+.SC_indexMessage .leftHD .imgtitle{ position: absolute; left: 0; top: auto; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.5); color: #FFFFFF; font-size: 24px; padding:20px 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+.SC_indexMessage .rightStatistics{ overflow: hidden;}
+.SC_indexMessage .rightStatistics .topBox{ height: 160px; background: rgba(0,0,0,0.1);}
+.SC_indexMessage .rightStatistics .topBox h3{ float: left; background: #5abda3; height: 160px; line-height: 160px; color: #FFFFFF; font-size: 26px; width: 250px; text-align: center;}
+.SC_indexMessage .rightStatistics .topBox h3 span{ border-left: 3px solid #ffffff; padding: 0 15px;}
+.SC_indexMessage .rightStatistics .topBox>div{ overflow: hidden;}
+.SC_indexMessage .rightStatistics .topBox dl{ float: left; border-right: 1px solid #eaeaee; color: #FFFFFF; width: 50%; text-align: center; font-size: 26px; box-sizing: border-box; padding: 10px; margin:30px 0 0;}
+.SC_indexMessage .rightStatistics .topBox dl:last-child{ border:none;}
+.SC_indexMessage .rightStatistics .topBox dl dt{ padding: 0 0 10px;}
+
+.SC_indexMessage .rightStatistics .leftRankings{ margin: 20px 20px 0 0; background: rgba(0,0,0,0.1); float: left; width: 520px;}
+.SC_indexMessage .rightStatistics .leftRankings h4{ height: 70px; line-height: 70px; text-align: center; color: #61aae0; font-size: 26px; font-weight: bold; border-bottom: 1px solid #eaeaea;}
+.SC_honor .rightHonorList ul{ padding: 20px 0;}
+.SC_indexMessage .rightStatistics .leftRankings ul li{ font-size:24px; color: #ffffff; height: 69px; line-height: 69px;}
+.SC_indexMessage .rightStatistics .leftRankings ul li span{ float: right; width: 50%; text-align: center; }
+.SC_indexMessage .rightStatistics .leftRankings ul li p{overflow: hidden; text-indent: 4em}
+.SC_indexMessage .rightStatistics .leftRankings ul li:nth-child(1) p{background: url(../images/NO1_03.png) no-repeat scroll 30px  center}
+.SC_indexMessage .rightStatistics .leftRankings ul li:nth-child(2) p{background: url(../images/NO2_06.png) no-repeat scroll 30px center}
+.SC_indexMessage .rightStatistics .leftRankings ul li:nth-child(3) p{background: url(../images/NO3_09.png) no-repeat scroll 30px center}
+.SC_indexMessage .rightStatistics .rightTool{ overflow: hidden; margin:20px 0 0; }
+.SC_indexMessage .rightStatistics .rightTool dl{ background: rgba(0,0,0,0.1);}
+.SC_indexMessage .rightStatistics .rightTool dl dt{ height: 70px; line-height: 70px; text-align: center; color: #61aae0; font-size: 26px; font-weight: bold; border-bottom: 1px solid #eaeaea;}
+.SC_indexMessage .rightStatistics .rightTool dl dd{ height: 105px; line-height: 105px; text-align: center; font-size: 26px; color: #FFFFFF;}
+.SC_indexMessage .rightStatistics .rightTool dl dd span{ padding: 0 20px;}
+.SC_indexMessage .rightStatistics .rightTool>div{ background: #61aae0; float: left; color: #FFFFFF; margin: 20px 20px 0 0; width: 217px; height: 148px; font-size: 26px; text-align: center}
+.SC_indexMessage .rightStatistics .rightTool>div h4{ padding: 30px 0 10px;}
+.SC_indexMessage .rightStatistics .rightTool>div p{}
+.SC_indexMessage .rightStatistics .rightTool a{ display: block; overflow: hidden; width: 217px; height:148px; line-height: 148px; background: #d0706c; color: #FFFFFF; margin: 20px 0 0; text-align: center; font-size: 28px;}
+
+.SC_bottomEnter{ position: fixed; left: 0; top: auto; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.1); text-align: center; padding: 15px 0;}
+
+/* 评价成绩 */
+.topBox{margin: 0 50px; height: 300px;}
+.bottomBox{ margin: 0 50px;}
+
+  /*上部搜索框*/
+.SC_searchBox{ margin: 0 50px;}
+.SC_searchBox ul li{ float: left; margin: 0 20px 0 0;}
+.SC_searchBox ul li em{color: #ffffff; font-size: 24px; padding: 0 10px 0 0; vertical-align: middle;}
+.SC_searchBox ul li select{ background:rgba(0,0,0,0.1); border: 1px solid #487192; color: #ffffff; font-size: 25px; height: 60px; line-height: 58px; padding: 0 20px;}
+.SC_searchBox ul li input[type='button']{ height: 60px; background:rgba(0,0,0,0.1); border:none; color: #ffffff; font-size: 24px; padding: 0 30px;}
+
+  /* 页面返回按钮 */
+.SC_backBut{ position: fixed; right: 20px; bottom: 20px;}
+.SC_backBut input[type='button']{ display: block; margin:20px 0 0; background: #ffcb00; color: #333333; font-size: 32px; border: none; padding: 10px 0; border-radius: 10px; letter-spacing: 0.5rem; text-align: center; width: 150px; text-align: center;}
+.SC_backBut input.bt1{ background: #ffcb00; }
+.SC_backBut input.bt2{ background: #ff5c0b; color: #ffffff;}
+/* 公共头部 */
+.mesBox h3{ height:80px; line-height: 80px; border-bottom: 1px solid #919da7; font-weight: normal; color: #FFFFFF; font-size:30px; margin: 20px 50px;}
+.mesBox h3 span{ border-left: 5px solid #ed974b; padding: 0 20px;}
