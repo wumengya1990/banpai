@@ -2,7 +2,14 @@
   <div class="SC_homePage">
 
     <div class="SC_noticeBar">
-      <p>小名同学，你有一条最新的留言信息，请注意查收</p>
+         <marquee direction="left" class="scrollBar">
+            <p>小名同学，你有一条最新的留言信息，请注意查收1</p>
+            <p>小名同学，你有一条最新的留言信息，请注意查收2</p>
+            <p>小名同学，你有一条最新的留言信息，请注意查收3</p>
+            <p>小名同学，你有一条最新的留言信息，请注意查收4</p>
+            <p>小名同学，你有一条最新的留言信息，请注意查收5</p>
+            </marquee>
+            
     </div>
 
     <div class="SC_topMessage">
@@ -16,30 +23,34 @@
 
       <div class="weather">
         <dl><dt>多云</dt><dd>22°~28°</dd></dl>
-        <div class="weatherImg"><img src="../../static/images/yun_03.png"></div>
+        <div class="weatherImg"></div>
       </div>
 
       <div class="classTime">
         <div class="classState">
-          <p>上课中</p>
+          <!-- <p>上课中</p>
           <h4>语文</h4>
-          <p>（10:00~10:45）</p>
+          <p>（10:00~10:45）</p> -->
+          <h1>休息中</h1>
         </div>
         <dl><dt>10:16</dt><dd><span>2018年07月12日</span><span>星期四</span></dd></dl>
       </div>
     </div>
 
     <div class="SC_noticeList">
-      <h3><span>通知公告</span></h3>
+      <h3><span>通知公告</span><router-link class="more" to="/notifyList">更多</router-link></h3>
       <ul>
-        <li><span>校园通知：</span>通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容</li>
+        <li><em class="entry"><i></i><i></i></em><span>校园通知：</span>通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容</li>
       </ul>
     </div>
 
     <div class="SC_indexMessage">
       <div class="leftHD">
           <ul>
-            <li><img src="../../static/images/huandengImg_03.png"></li>
+            <li><a title="标题1标题1标题1标题1标题1标题1标题1标题1标题1" href=""><img src="../../static/images/huandengImg_03.png"></a></li>
+            <li><a title="标题2标题2标题2标题2标题2标题2标题2标题2标题2" href=""><img src="../../static/images/huandengImg_03.png"></a></li>
+            <li><a title="标题3标题3标题3标题3标题3标题3标题3标题3标题3" href=""><img src="../../static/images/huandengImg_03.png"></a></li>
+            <li><a title="标题4标题4标题4标题4标题4标题4标题4标题4标题4" href=""><img src="../../static/images/huandengImg_03.png"></a></li>
           </ul>
         <div class="imgtitle">内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息内容信息</div>
       </div>
@@ -50,6 +61,7 @@
             <div>
             <dl><dt><span>今日得分：</span>12分</dt><dd><span>今日排名：</span>第一名</dd></dl>
             <dl><dt><span>今日得分：</span>12分</dt><dd><span>今日排名：</span>第一名</dd></dl>
+            <div class="clear"></div>
             </div>
           </div>
         <div class="leftRankings">
@@ -62,7 +74,7 @@
             </ul>
         </div>
         <div class="rightTool">
-          <dl><dt>今日值日生</dt><dd><span>张扬</span><span>张扬</span><span>张扬</span></dd></dl>
+          <dl><dt><span>今日值日生</span></dt><dd><span>张扬</span><span>张扬</span><span>张扬</span></dd></dl>
           <div><h4>签到考勤</h4><p>30/36</p></div>
           <a class="selfEnter" href="">个人中心</a>
           
@@ -81,8 +93,30 @@
 </template>
 
 <script>
+import $ from "jquery"
     export default {
-        name: "homePage"
+        name: "homePage",
+        mounted(){
+          this.huadong();
+        },
+        methods:{
+           
+        },computed:{
+           huadong:function () {
+            function scroll(){
+              $(".leftHD ul").animate({
+                "margin-left":"-862px"
+              },function () {
+                $(".leftHD li:eq(0)").appendTo($(".gundong ul"));
+                $(".leftHD ul").css({"margin-left":0});
+
+              })
+            }
+            setInterval(scroll,5000);
+            }
+          
+
+        }
     }
 </script>
 

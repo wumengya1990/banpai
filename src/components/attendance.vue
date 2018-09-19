@@ -16,7 +16,7 @@
             <h3><span>当前签到情况</span></h3>
             <div class="SC_signInMainLeft_1">
                 <dl><dt><img src="../../static/images/userImg_03.png"></dt><dd><span>张敏</span><em class="have">已签到</em></dd></dl>
-                <dl><dt><img src="../../static/images/userImg_03.png"></dt><dd><span>张敏</span><em class="have">已签到</em></dd></dl>
+                <dl><dt><img src="../../static/images/studentHD_03.png"></dt><dd><span>张敏</span><em class="have">已签到</em></dd></dl>
                 <dl><dt><img src="../../static/images/userImg_03.png"></dt><dd><span>张敏</span><em class="have">已签到</em></dd></dl>
                 <dl><dt><img src="../../static/images/userImg_03.png"></dt><dd><span>张敏</span><em>未签到</em></dd></dl>
                 <dl><dt><img src="../../static/images/userImg_03.png"></dt><dd><span>张敏</span><em>未签到</em></dd></dl>
@@ -32,7 +32,10 @@
             </div>
         </div>
 
-    <div class="SC_backBut"><input type="button" value="返回"></div>
+    <div class="SC_backBut">
+        <input class="bt1" type="button" value="返回">
+        <input class="bt2" type="button" value="退出">
+        </div>
     </div>
 </template>
 

@@ -6,6 +6,9 @@ Vue.use(Router)
 const routes = [
   {                                                                        //当首次进入页面时，页面没有显示任何组件；让页面一加载进来就默认显示first页面
     path:'/',                                                           //重定向，就是给它重新指定一个方向，加载一个组件；
+    component:resolve => require(['@/components/links'],resolve)
+  },{                                                                        //当首次进入页面时，页面没有显示任何组件；让页面一加载进来就默认显示first页面
+    path:'/schoolIndex',                                                           //重定向，就是给它重新指定一个方向，加载一个组件；
     component:resolve => require(['@/components/schoolIndex'],resolve)
   },{
     path:'/top',
@@ -58,7 +61,23 @@ const routes = [
   },{
     path:'/score',
     component:resolve => require(['@/components/score'],resolve)
+  },{
+    path:'/homeWork',
+    component:resolve => require(['@/components/homeWork'],resolve)
+  },{
+    path:'/classDemeanor',
+    component:resolve => require(['@/components/classDemeanor'],resolve)
+  },{
+    path:'/classDemeanorCon',
+    component:resolve => require(['@/components/classDemeanorCon'],resolve)
+  },{
+    path:'/notifyList',
+    component:resolve => require(['@/components/notifyList'],resolve)
+  },{
+    path:'/notifyDetails',
+    component:resolve => require(['@/components/notifyDetails'],resolve)
   }
+  
 //这里require组件路径根据自己的配置引入
 ]
 //最后创建router 对路由进行管理，它是由构造函数 new vueRouter() 创建，接受routes 参数。

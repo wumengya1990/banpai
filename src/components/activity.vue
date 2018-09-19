@@ -274,10 +274,10 @@ methods:{
       $(".participantsList").each(function () {
          let thisChildLength = $(this).find("a").length;
          console.log(thisChildLength);
-         if(thisChildLength >= 5 ){
+         if(thisChildLength >= 4 ){
            $(this).find("a").css("margin","0 0 0 -10px");
            $(this).find("a").eq(0).css("margin",0);
-           $(this).find("a:gt(5)").remove();
+           $(this).find("a:gt(4)").remove();
            $(this).find("a:last").append("<span>"+thisChildLength+"</span>");
 
          }
