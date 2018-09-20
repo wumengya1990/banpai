@@ -1,7 +1,7 @@
 <template>
   <div class="SC_timetableMine mesBox">
     <h3><span>我的课表</span></h3>
-    <div class="SC_timetableRihgt">
+    <div class="SC_timetableRihgt SC_timetableRihgtMine">
       <h4><span>调课通知</span></h4>
       <ul>
         <li>由于数学老师生病请假，第二节课数学课改上语文课。</li>
@@ -16,7 +16,7 @@
         <li>由于数学老师生病请假，第二节课数学课改上语文课。</li>
       </ul>
     </div>
-    <div class="SC_timetableLeft">
+    <div class="SC_timetableLeft SC_timetableLeftMine">
       <table class="SC_tableStyle" width="100%">
         <thead>
         <tr><th>节次</th><th>星期一</th><th>星期二</th><th>星期三</th><th>星期四</th><th>星期五</th></tr>

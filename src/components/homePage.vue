@@ -38,10 +38,15 @@
     </div>
 
     <div class="SC_noticeList">
-      <h3><span>通知公告</span><router-link class="more" to="/notifyList">更多</router-link></h3>
-      <ul>
-        <li><em class="entry"><i></i><i></i></em><span>校园通知：</span>通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容</li>
+      <h3><span>通知公告<em class="entry">（12<i>/</i>13）</em></span><router-link class="more" to="/notifyList">更多</router-link></h3>
+      <div id="scrollBox" style="height:60px; overflow:hidden;">
+      <ul id="schoollist1">
+        <li><span>校园通知：</span>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</li>
+         <li><span>校园通知：</span>222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</li>
+          <li><span>校园通知：</span>333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333</li>
       </ul>
+      <ul id="schoollist2"></ul>
+      </div>
     </div>
 
     <div class="SC_indexMessage">
@@ -97,10 +102,9 @@ import $ from "jquery"
     export default {
         name: "homePage",
         mounted(){
-          this.huadong();
-        },
-        methods:{
-           
+          this.gundong;
+          this.huadong;
+          
         },computed:{
            huadong:function () {
             function scroll(){
@@ -113,7 +117,29 @@ import $ from "jquery"
               })
             }
             setInterval(scroll,5000);
-            }
+            },
+          gundong:function(){
+            let speed = 120 ;
+            let demo=document.getElementById("scrollBox"); 
+            let demo1=document.getElementById("schoollist1"); 
+            let demo2=document.getElementById("schoollist2"); 
+            demo2.innerHTML=demo1.innerHTML;
+            function Marquee(){ 
+              if(demo.scrollTop>=demo1.offsetHeight){
+              demo.scrollTop=0; 
+              }
+              else{ 
+                demo.scrollTop=demo.scrollTop+1;
+                if((demo.scrollTop % 70) == 0){
+                  // alert("OK");
+                }
+                
+              } 
+            } 
+            var MyMar=setInterval(Marquee,speed) 
+              demo.onmouseenter=function(){clearInterval(MyMar)} 
+              demo.onmouseleave=function(){MyMar=setInterval(Marquee,speed)} 
+          }
           
 
         }

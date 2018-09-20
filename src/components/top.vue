@@ -2,7 +2,7 @@
     <div class="SC_topBar">
         <div class="SC_class">{{banji}}</div>
         <div class="SC_classState">{{classState}}</div>
-        <div class="SC_time">{{dqtime}}<span id="showTime"></span></div>
+        <div class="SC_time">{{dqtime}}<span>{{schooldDate}}</span><span id="showTime"></span></div>
 
     </div>
 </template>
@@ -14,7 +14,8 @@ export default {
         return{
             banji:'三年级二班(班主任张效诚)',
             classState:'上课中(语文 14:10~14:55 张敏)',
-            dqtime:''
+            dqtime:'',
+            schooldDate:''
         }
     },
     mounted() {
@@ -29,6 +30,29 @@ export default {
             var yufen = myDate.getMonth()+1;
             var nian = myDate.getFullYear();
             this.dqtime = nian + "年" + yufen + "月" + riqi + "日";
+            switch (dateNumber){
+              case 1:
+                this.schooldDate='星期一';
+                break;
+              case 2:
+                this.schooldDate='星期二';
+                break;
+              case 3:
+                this.schooldDate='星期三';
+                break;
+              case 4:
+                this.schooldDate='星期四';
+                break;
+              case 5:
+                this.schooldDate='星期五';
+                break;
+              case 6:
+                this.schooldDate='星期六';
+                break;
+              case 7:
+                this.schooldDate='星期日';
+                break;
+            }
           },
           jishi:function(time){
             var t = '';
