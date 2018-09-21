@@ -1,10 +1,23 @@
 <template>
-    <div class="SC_score">
+    <div class="SC_score mesBox">
+        <h3><span>评价成绩</span></h3>
         <div class="topBox">
-        <h3><span>分类</span><span>得分</span><span>评价人</span><span>评价时间</span><span>详情</span></h3>
-        <ul>
-            <li><p>课堂表现评价</p><span></span><a href="">点击查看详情</a></li>
-        </ul>
+        <div class="topBoxTitle">
+            <table class="SC_tableStyle" width="100%">
+                <tr><th width="40%">分类</th><th width="15%">得分</th><th width="15%">评价人</th><th width="15%">评价时间</th><th width="15%">详情</th></tr>
+            </table>
+        </div>
+
+        <div class="topBoxbody">
+            <table class="SC_tableStyle" width="100%">
+                <tr><th width="40%">分类</th><th width="15%">得分</th><th width="15%">评价人</th><th width="15%">评价时间</th><th width="15%">详情</th></tr>
+                <tr><td><em class="biaoshi"></em>课堂表现评价</td><td>14.00</td><td>张洋</td><td>2018-09-21</td><td><a href="">查看详情</a></td></tr>
+                <tr><td><em></em>课堂表现评价</td><td>14.00</td><td>张洋</td><td>2018-09-21</td><td><a href="">查看详情</a></td></tr>
+                 <tr><td>课堂表现评价</td><td>14.00</td><td>张洋</td><td>2018-09-21</td><td><a href="">查看详情</a></td></tr>
+                  <tr><td>课堂表现评价</td><td>14.00</td><td>张洋</td><td>2018-09-21</td><td><a href="">查看详情</a></td></tr>
+            </table>
+        </div>
+
         </div>
 
         <div class="bottomBox">

@@ -30,7 +30,7 @@
 .SC_signInMainRight .resultBox{ padding:20px 0; color: #FFFFFF; }
 .SC_signInMainRight .resultBox span{ display: inline-block; text-align: center; width: 33%;}
 
-.SC_signInMainLeft{ overflow: hidden; padding: 50px 0 50px 50px;}
+.SC_signInMainLeft{ overflow: hidden; padding: 20px 0 50px 50px;}
 .SC_signInMainLeft h3{ height: 80px; line-height: 80px; color: #FFFFFF; font-size:30px; font-weight: normal;}
 .SC_signInMainLeft h3 span{border-left: 5px solid #5abda3; padding: 0 20px;}
 .SC_signInMainLeft .SC_signInMainLeft_1 dl{ float: left; margin: 20px 50px 0 0; color: #FFFFFF; text-align: center;}
@@ -43,7 +43,7 @@
 
 
 /* 签到统计内容 */
-.SC_attendance{ float: right; border-left: 1px solid rgba(255,255,255,0.3); padding: 20px; margin: 130px 0 0; width: 300px;}
+.SC_attendance{ float: right; border-left: 1px solid rgba(255,255,255,0.3); padding: 20px; margin: 100px 0 0; width: 300px;}
 .SC_attendance h3{ color: #FFFFFF; text-align: center; font-size:50px; font-weight:normal;}
 .SC_attendance h3 em{ padding: 0 15px;}
 .SC_attendance h3 span{ color: #5ab9a3;}
@@ -72,6 +72,8 @@
 .SC_tableStyle{ border: 1px solid #919da7; background: rgba(0,0,0,0.1); border-collapse: collapse;}
 .SC_tableStyle th{ background: #3b5c77; color: #FFFFFF; height:80px; font-size: 24px; font-weight: normal;}
 .SC_tableStyle td{ text-align: center; color: #FFFFFF; height: 87px; font-size: 25px;}
+.SC_tableStyle td a{ color:#5aaae0;}
+.SC_tableStyle td em.biaoshi{ display: inline-block; border: 1px solid rgba(255,255,255,0.3)}
 .SC_tableStyle_borderLine th,.SC_tableStyle_borderLine td{ border: 1px solid #919da7;}
 
 .SC_tableStyle1{ border: 1px solid #919da7; border-collapse: collapse;}
@@ -328,7 +330,10 @@
 .SC_bottomEnter{ position: fixed; left: 0; top: auto; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.1); text-align: center; padding: 15px 0; }
 
 /* 评价成绩 */
-.SC_score .topBox{margin: 0 50px; height: 300px;}
+.SC_score .topBox{margin: 0 50px 20px; position: relative; height: 280px;}
+.SC_score .topBox .topBoxTitle{ position: absolute; left: 0; top: 0; right: 0; bottom: auto;}
+.SC_score .topBox .topBoxbody{ height: 100%; overflow: hidden; overflow-y: auto;}
+.SC_score .topBox .topBoxbody::-webkit-scrollbar{ display: none;}
 .SC_score .bottomBox{ margin: 0 50px;}
 
   /*我的作业*/
