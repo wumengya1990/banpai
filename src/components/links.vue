@@ -21,6 +21,8 @@
       <router-link active-class="on" to="/classDemeanor">班级风采</router-link>
       <router-link active-class="on" to="/classDemeanorCon">班级风采详情</router-link>
       <router-link active-class="on" to="/notifyList">通知列表</router-link>
+      <router-link active-class="on" to="/scHomePage">校牌首页</router-link>
+      <router-link active-class="on" to="/classList">班级列表</router-link>
     </div>
 </template>
 

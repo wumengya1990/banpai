@@ -2,13 +2,24 @@
   <div class="SC_homePage">
 
     <div class="SC_noticeBar">
-         <marquee direction="left" class="scrollBar">
+         <!-- <marquee direction="left" class="scrollBar">
             <p>小名同学，你有一条最新的留言信息，请注意查收1</p>
             <p>小名同学，你有一条最新的留言信息，请注意查收2</p>
             <p>小名同学，你有一条最新的留言信息，请注意查收3</p>
             <p>小名同学，你有一条最新的留言信息，请注意查收4</p>
             <p>小名同学，你有一条最新的留言信息，请注意查收5</p>
-            </marquee>
+            </marquee> -->
+
+            <div class="LRScroll" id="LRScroll">
+              <ul class="LRScrollbox1" id="LRScrollbox1">
+                <li><p>小名同学，你有一条最新的留言信息，请注意查收1</p></li>
+                <li><p>小名同学，你有一条最新的留言信息，请注意查收2</p></li>
+                <li><p>小名同学，你有一条最新的留言信息，请注意查收3</p></li>
+                <li><p>小名同学，你有一条最新的留言信息，请注意查收4</p></li>
+                <li><p>小名同学，你有一条最新的留言信息，请注意查收5</p></li>
+              </ul>
+              <ul class="LRScrollbox2" id="LRScrollbox2"></ul>
+            </div>
             
     </div>
 
@@ -103,6 +114,7 @@ import $ from "jquery"
         name: "homePage",
         mounted(){
           this.gundong;
+          this.gundong1;
           this.huadong;
           
         },computed:{
@@ -120,25 +132,40 @@ import $ from "jquery"
             },
           gundong:function(){
             let speed = 120 ;
-            let demo=document.getElementById("scrollBox"); 
-            let demo1=document.getElementById("schoollist1"); 
-            let demo2=document.getElementById("schoollist2"); 
-            demo2.innerHTML=demo1.innerHTML;
+            let hdemo=document.getElementById("scrollBox"); 
+            let hdemo1=document.getElementById("schoollist1"); 
+            let hdemo2=document.getElementById("schoollist2"); 
+            hdemo2.innerHTML=hdemo1.innerHTML;
             function Marquee(){ 
-              if(demo.scrollTop>=demo1.offsetHeight){
-              demo.scrollTop=0; 
+              if(hdemo.scrollTop>=hdemo1.offsetHeight){
+              hdemo.scrollTop=0; 
               }
               else{ 
-                demo.scrollTop=demo.scrollTop+1;
-                if((demo.scrollTop % 70) == 0){
-                  // alert("OK");
-                }
-                
+                hdemo.scrollTop=hdemo.scrollTop+1;
+              } 
+            } 
+            var MyMar=setInterval(Marquee,speed) 
+              hdemo.onmouseenter=function(){clearInterval(MyMar)} 
+              hdemo.onmouseleave=function(){MyMar=setInterval(Marquee,speed)} 
+          },
+          gundong1:function(){
+             let speed = 10 ;
+             let demo=document.getElementById("LRScroll"); 
+             let demo1=document.getElementById("LRScrollbox1"); 
+             let demo2=document.getElementById("LRScrollbox2"); 
+              demo2.innerHTML=demo1.innerHTML;
+              function Marquee(){ 
+              if(demo.scrollLeft>=demo1.offsetWidth){
+                 demo.scrollLeft=0; 
+              }
+              else{ 
+                demo.scrollLeft=demo.scrollLeft+1;
               } 
             } 
             var MyMar=setInterval(Marquee,speed) 
               demo.onmouseenter=function(){clearInterval(MyMar)} 
               demo.onmouseleave=function(){MyMar=setInterval(Marquee,speed)} 
+              
           }
           
 

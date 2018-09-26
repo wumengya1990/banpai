@@ -76,7 +76,14 @@ const routes = [
   },{
     path:'/notifyDetails',
     component:resolve => require(['@/components/notifyDetails'],resolve)
+  },{
+    path:'/scHomePage',
+    component:resolve => require(['@/components/scHomePage'],resolve)
+  },{
+    path:'/classList',
+    component:resolve => require(['@/components/classList'],resolve)
   }
+  
   
 //这里require组件路径根据自己的配置引入
 ]
