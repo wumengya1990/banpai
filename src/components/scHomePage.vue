@@ -35,7 +35,7 @@
     </div>
 
     <div class="SC_indexMessage">
-      <div class="leftHD">
+      <div class="leftHD1">
           <ul>
             <li><a title="标题1标题1标题1标题1标题1标题1标题1标题1标题1" href=""><img src="../../static/images/huandengImg_03.png"></a></li>
             <li><a title="标题2标题2标题2标题2标题2标题2标题2标题2标题2" href=""><img src="../../static/images/huandengImg_03.png"></a></li>
@@ -50,14 +50,27 @@
             <div class="tabTop"><span>班级通知</span><span>班级留言</span><em>请过往的同学相互转告</em><a href="">更多</a></div>
             <div class="leaveMessageListBox">
                 <ul>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>2018-09-13</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
                 </ul>
 
                  <ul>
-                    <li>
-                        <h5><span>一年级</span></h5>
-                        <P><em>张洋（一班）</em></P>
-                    </li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
                 </ul>
             </div>
         </div>
@@ -79,6 +92,7 @@
 </template>
 
 <script>
+import $ from 'jquery'
 export default {
 name:"scHomePage",
 data(){
@@ -91,6 +105,8 @@ data(){
 },mounted() {
     this.localTime();
     this.jishi();
+    this.gundong();
+    this.tabChange();
 },
 methods:{
     localTime:function () {
@@ -146,6 +162,45 @@ methods:{
                 {i="0" + i}
                 return i
               }
+          },
+          gundong:function(){
+            let speed = 120 ;
+            let hdemo=document.getElementById("scrollBox"); 
+            let hdemo1=document.getElementById("schoollist1"); 
+            let hdemo2=document.getElementById("schoollist2"); 
+            hdemo2.innerHTML=hdemo1.innerHTML;
+            function Marquee(){ 
+              if(hdemo.scrollTop>=hdemo1.offsetHeight){
+              hdemo.scrollTop=0; 
+              }
+              else{ 
+                hdemo.scrollTop=hdemo.scrollTop+1;
+              } 
+            } 
+            var MyMar=setInterval(Marquee,speed) 
+              hdemo.onmouseenter=function(){clearInterval(MyMar)} 
+              hdemo.onmouseleave=function(){MyMar=setInterval(Marquee,speed)} 
+          },
+          tabChange:function(){
+            $(".tabTop").find("span").eq(0).addClass("on");
+            // $(".leaveMessageListBox").find("ul").eq(0).show();
+            $(".tabTop span").click(function(){
+              var thisIndex = $(this).index();
+              $(".tabTop").find("span").eq(thisIndex).addClass("on").siblings().removeClass("on");
+              switch(thisIndex){
+                case 0:
+                $(".leaveMessageListBox").find("ul").eq(0).animate({
+                  "margin-left":"0"
+                });
+                break;
+                case 1:
+                $(".leaveMessageListBox").find("ul").eq(0).animate({
+                  "margin-left":"-845px"
+                });
+                break;
+              }
+              console.log(thisIndex);
+            })
           }
 }
 }

@@ -114,7 +114,7 @@
 .SC_rankingList h4{ border-bottom: 1px solid #eaeaea; height: 80px; line-height: 80px;}
 .SC_rankingList h4 span{ float: left;  width: 50%; text-align: center; color: #ffffff; font-size:28px; font-weight: normal;}
 .SC_rankingList h4 span.on{ color: #F7AC01;}
-.SC_rankingList .rankingListM ul{padding: 20px 0;}
+.SC_rankingList .rankingListM ul{padding: 20px 0; height: 640px; overflow: hidden; overflow-y: auto;}
 .SC_rankingList .rankingListM ul li{ color: #FFFFFF; font-size: 28px; height:80px; line-height: 80px;}
 .SC_rankingList .rankingListM ul li span{ float: right; width: 50%; text-align: center;}
 .SC_rankingList .rankingListM ul li p{ overflow: hidden; text-align: center;}
@@ -186,8 +186,8 @@
 .SC_honor .LeftHonorBox dl dd{ padding: 0 0 20px;}
 .SC_honor .LeftHonorBox dl dd .userImg{  float: left; width:80px; height:80px; border-radius: 50%; overflow: hidden; margin: 10px; border:1px solid #dedede;}
 .SC_honor .LeftHonorBox dl dd .userImg img{ width: 100%; height: 100%;}
-.SC_honor .LeftHonorBox dl dd h4{ font-size: 28px; color: #333333; padding: 20px 0 10px;}
-.SC_honor .LeftHonorBox dl dd p{ font-size: 26px; color: #999999;}
+.SC_honor .LeftHonorBox dl dd h4{ font-size: 28px; height: 37px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #333333; padding: 20px 0 10px;}
+.SC_honor .LeftHonorBox dl dd p{ font-size: 26px; height: 35px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #999999;}
 .SC_honor .choResultBox{ height: 730px; overflow: hidden; overflow-y: auto;}
 
 .SC_honorMy .LeftHonorBox{ overflow: hidden; margin: 0 50px;}
@@ -301,6 +301,12 @@
 .SC_indexMessage .leftHD ul li img{ width: 100%; height: 100%;}
 .SC_indexMessage .leftHD .imgtitle{ position: absolute; left: 0; top: auto; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.5); color: #FFFFFF; font-size: 24px; padding:20px 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 
+.SC_indexMessage .leftHD1{ float: left; width:1015px; height: 630px; overflow: hidden; position: relative; margin: 0 20px 0 0;}
+.SC_indexMessage .leftHD1 ul{ font-size: 0; white-space: nowrap;}
+.SC_indexMessage .leftHD1 ul li{ display:inline-block; width: 1015px; height: 630px;}
+.SC_indexMessage .leftHD1 ul li img{ width: 100%; height: 100%;}
+.SC_indexMessage .leftHD1 .imgtitle{ position: absolute; left: 0; top: auto; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.5); color: #FFFFFF; font-size: 24px; padding:20px 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+
 .SC_indexMessage .rightStatistics{ overflow: hidden;}
 .SC_indexMessage .rightStatistics .topBox{ background: rgba(0,0,0,0.1);}
 .SC_indexMessage .rightStatistics .topBox h3{ height: 60px; line-height: 60px; color: #FFFFFF; font-size: 26px;}
@@ -352,7 +358,7 @@
 .SC_classDemeanor .demeanorList dl dt{ width:440px; height: 315px;}
 .SC_classDemeanor .demeanorList dl dt img{ width: 100%; height: 100%;}
 .SC_classDemeanor .demeanorList dl dd{ padding:15px 30px;}
-.SC_classDemeanor .demeanorList dl dd h4{ font-size:26px;padding: 5px 0; color: #333333;}
+.SC_classDemeanor .demeanorList dl dd h4{ font-size:26px;padding: 5px 0; color: #333333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .SC_classDemeanor .demeanorList dl dd p{ font-size: 24px; padding: 5px 0; color: #666666;}
 
 .SC_classDemeanorCon .leftDescribe{ float: left; margin: 20px 50px 0 50px; width: 500px; border-right: 1px solid rgba(255,255,255,0.3); padding: 0 20px 0 0; height: 800px; overflow: hidden; overflow-y: auto;}
@@ -367,22 +373,44 @@
 .SC_classDemeanorCon .imgListl2 li{width:570px; height:406px; margin:170px 0 0 40px;}
 .SC_classDemeanorCon .imgListl3 li{width:396px; margin:80px 20px 0 0;} 
 
+
+
 /* 校牌首页 */
 .SC_scHomePage .schoolIndexTop{ background: rgba(0,0,0,0.2);}
-.SC_scHomePage .schoolIndexTop .logo{ color:#FFFFFF; font-size:50px; padding:20px; float: left;}
+.SC_scHomePage .schoolIndexTop .logo{ color:#FFFFFF; font-size:50px; padding:30px; float: left;}
 .SC_scHomePage .schoolIndexTop .logo .logoImg{ display: inline-block; vertical-align: middle; margin: 0 20px 0 0;width: 100px;height: 100px;overflow: hidden;}
 .SC_scHomePage .schoolIndexTop .logo .logoImg img{width: 100%;height: 100%;}
-.SC_scHomePage .schoolIndexTop .localDate{ float: right; color: #ffffff; padding:10px 40px 0;}
+.SC_scHomePage .schoolIndexTop .localDate{ float: right; color: #ffffff; padding:35px 40px 0;}
 .SC_scHomePage .schoolIndexTop .localDate .localDateLeft{ float: left; font-size:80px; margin: 0 20px 0 0;}
-.SC_scHomePage .schoolIndexTop .localDate dl{ overflow: hidden; font-size:24px; padding: 20px 0 0;}
-.SC_scHomePage .schoolIndexTop .schoolWeather{ float: right; color: #ffffff;}
-.SC_scHomePage .schoolIndexTop .schoolWeather dl{ font-size: 24px; text-align: center; padding: 22px 80px 0 40px;}
-.SC_scHomePage .schoolIndexTop .schoolWeather dl dt{ font-size: 36px;}
+.SC_scHomePage .schoolIndexTop .localDate dl{ overflow: hidden; font-size:28px; padding:5px 0 0;}
+.SC_scHomePage .schoolIndexTop .schoolWeather{ float: right; color: #ffffff; width: 400px; text-align: center; padding: 25px 0 0;}
+.SC_scHomePage .schoolIndexTop .schoolWeather dl{ font-size: 28px; text-align: center;}
+.SC_scHomePage .schoolIndexTop .schoolWeather dl dt{ font-size: 45px;}
+
+.SC_indexMessage .leaveMessageList{ background: rgba(0,0,0,0.1); height: 546px;}
+.SC_indexMessage .leaveMessageList .tabTop{ height: 70px; line-height: 70px; font-size: 26px; text-align: right;}
+.SC_indexMessage .leaveMessageList .tabTop a{ color: #d16f6c; font-size:24px; padding: 0 20px; }
+.SC_indexMessage .leaveMessageList .tabTop span{ float: left; color: #FFFFFF; box-sizing: border-box; padding:0 20px; margin: 0 10px; cursor: pointer;}
+.SC_indexMessage .leaveMessageList .tabTop span.on{ color: #d16f6c; height: 67px; line-height: 67px; border-bottom: 3px solid #d16f6c; font-weight: bold;}
+.SC_indexMessage .leaveMessageList .tabTop em{ color: #ed974c; float: left; font-size: 22px;}
+.SC_indexMessage .leaveMessageListBox{ white-space: nowrap;}
+.SC_indexMessage .leaveMessageListBox ul{display: inline-block; width: 100%; box-sizing: border-box; padding: 0 20px; height: 485px; overflow: hidden; overflow-y: auto;}
+.SC_indexMessage .leaveMessageListBox ul li{ color: #FFFFFF; text-align: right; font-size: 24px; height: 60px; line-height: 60px;}
+.SC_indexMessage .leaveMessageListBox ul li p{ color: #FFFFFF; float: left; width: 60%; text-align: justify; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.SC_indexMessage .leaveMessageListBox ul li span{ padding: 0 0 0 20px; color: #89b6d8;}
+/* .SC_indexMessage .leaveMessageListBox ul:nth-child(2){ display: none;} */
+
+.SC_indexMessage .enterBox{ text-align: center; margin: 20px 0 0;}
+.SC_indexMessage .enterBox a{ display:inline-block;  height: 60px; line-height: 60px; color: #FFFFFF; border-bottom: 3px solid #5abca3; font-size: 26px; width: 264px; background: rgba(0,0,0,0.1); }
+.SC_indexMessage .enterBox a:nth-child(2){ margin: 0 20px; border-bottom-color: #d16f6c; }
 
 /* 班级列表 */
-.SC_classList .classBox h4{ height: 40px; line-height: 40px;}
-.SC_classList .classBox a{ float: left;}
-
+.SC_classList .classListScroll{ height: 910px; overflow: hidden; overflow-y: auto;}
+.SC_classList .classBox{ margin: 0 50px;}
+.SC_classList .classBox h4{ height: 40px; line-height: 40px; font-size: 26px; height:60px; line-height: 60px; margin: 0 0 10px;}
+.SC_classList .classBox h4 span{color: #FFFFFF; border-left: 3px solid #59b8a0; padding: 0 10px;}
+.SC_classList .classBox a{ float: left; font-size: 24px; position: relative; background: #ed974c; color: #FFFFFF; height: 60px; line-height: 60px; width:225px; text-align: center; margin: 0 0 30px 30px; border-radius: 10px;}
+.SC_classList .classBox a em{position: absolute; right:-15px; top:-15px; width: 50px; height: 50px; line-height: 50px; text-align: center;background: #cf706c; color:#FFFFFF; border-radius: 50%; overflow: hidden;}
 
 /* 通知列表 */
 .SC_notifyList ul{ margin: 0 50px; padding: 20px 40px; background: rgba(0,0,0,0.1); height: 790px; overflow: hidden; overflow-y: auto;}
@@ -404,3 +432,7 @@
 /* 公共头部 */
 .mesBox h3{ height:80px; line-height: 80px; border-bottom:none; font-weight: normal; color: #FFFFFF; font-size:30px; margin: 20px 50px;}
 .mesBox h3 span{ border-left: 5px solid #ed974b; padding: 0 20px;}
+
+
+.overflowBox{width: 458px;overflow-x: auto;overflow-y: hidden}
+.SC_indexMessage .rightStatistics .rightTool dl dd span{width: 140px;display: inline-block;padding: 0}

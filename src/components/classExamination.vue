@@ -17,6 +17,11 @@
               <li><span>8分</span><p>三年级二班</p></li>
               <li><span>7分</span><p>三年级二班</p></li>
               <li><span>7分</span><p>三年级二班</p></li>
+              <li><span>8分</span><p>三年级二班</p></li>
+              <li><span>8分</span><p>三年级二班</p></li>
+              <li><span>8分</span><p>三年级二班</p></li>
+              <li><span>7分</span><p>三年级二班</p></li>
+              <li><span>7分</span><p>三年级二班</p></li>
             </ul>
 
             <ul>
@@ -25,6 +30,9 @@
               <li><span>9分</span><p>三年级五班</p></li>
               <li><span>8分</span><p>三年级二班</p></li>
               <li><span>8分</span><p>三年级二班</p></li>
+              <li><span>8分</span><p>三年级二班</p></li>
+              <li><span>7分</span><p>三年级二班</p></li>
+              <li><span>7分</span><p>三年级二班</p></li>
               <li><span>8分</span><p>三年级二班</p></li>
               <li><span>7分</span><p>三年级二班</p></li>
               <li><span>7分</span><p>三年级二班</p></li>
