@@ -50,27 +50,27 @@
             <div class="tabTop"><span>班级通知</span><span>班级留言</span><em>请过往的同学相互转告</em><a href="">更多</a></div>
             <div class="leaveMessageListBox">
                 <ul>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
                 </ul>
 
                  <ul>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>2018-09-13</span><span>24:56:58</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
                 </ul>
             </div>
         </div>

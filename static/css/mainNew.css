@@ -396,7 +396,8 @@
 .SC_indexMessage .leaveMessageListBox{ white-space: nowrap;}
 .SC_indexMessage .leaveMessageListBox ul{display: inline-block; width: 100%; box-sizing: border-box; padding: 0 20px; height: 485px; overflow: hidden; overflow-y: auto;}
 .SC_indexMessage .leaveMessageListBox ul li{ color: #FFFFFF; text-align: right; font-size: 24px; height: 60px; line-height: 60px;}
-.SC_indexMessage .leaveMessageListBox ul li p{ color: #FFFFFF; float: left; width: 60%; text-align: justify; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.SC_indexMessage .leaveMessageListBox ul li p{ color: #FFFFFF; float: left; width: 75%; text-align: justify; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.SC_indexMessage .leaveMessageListBox ul li p em{ padding: 0 20px 0 0;}
 .SC_indexMessage .leaveMessageListBox ul li span{ padding: 0 0 0 20px; color: #89b6d8;}
 /* .SC_indexMessage .leaveMessageListBox ul:nth-child(2){ display: none;} */
 
@@ -409,8 +410,8 @@
 .SC_classList .classBox{ margin: 0 50px;}
 .SC_classList .classBox h4{ height: 40px; line-height: 40px; font-size: 26px; height:60px; line-height: 60px; margin: 0 0 10px;}
 .SC_classList .classBox h4 span{color: #FFFFFF; border-left: 3px solid #59b8a0; padding: 0 10px;}
-.SC_classList .classBox a{ float: left; font-size: 24px; position: relative; background: #ed974c; color: #FFFFFF; height: 60px; line-height: 60px; width:225px; text-align: center; margin: 0 0 30px 30px; border-radius: 10px;}
-.SC_classList .classBox a em{position: absolute; right:-15px; top:-15px; width: 50px; height: 50px; line-height: 50px; text-align: center;background: #cf706c; color:#FFFFFF; border-radius: 50%; overflow: hidden;}
+.SC_classList .classBox a{ float: left; font-size: 24px; position: relative; background: #ed974c; color: #FFFFFF; height: 60px; line-height: 60px; width:225px; text-align: center; margin: 0 0 30px 30px; border-radius: 50px;}
+.SC_classList .classBox a em{position: absolute; right:-15px; top:-20px; width: 50px; height: 50px; line-height: 50px; text-align: center;background: #cf706c; color:#FFFFFF; border-radius: 50%; overflow: hidden; font-size: 18px;}
 
 /* 通知列表 */
 .SC_notifyList ul{ margin: 0 50px; padding: 20px 40px; background: rgba(0,0,0,0.1); height: 790px; overflow: hidden; overflow-y: auto;}
