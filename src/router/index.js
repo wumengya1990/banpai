@@ -82,6 +82,9 @@ const routes = [
   },{
     path:'/classList',
     component:resolve => require(['@/components/classList'],resolve)
+  },{
+    path:'/screensaver',
+    component:resolve => require(['@/components/screensaver'],resolve)
   }
   
   

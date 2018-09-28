@@ -9,11 +9,11 @@
 /* 扫脸登录内容 */
 .SC_recognitionBox { position: absolute; width: 800px; height: 450px; left: 0; top: 0; right: 0; bottom: 0; margin: auto; background: #395367; overflow: hidden;}
 .SC_Tips{ position: absolute; width: 540px; min-height:100px; max-height: 300px; left: 0; top: 0; right: 0; bottom: 0; margin: auto; padding: 790px 0 0;}
-.SC_Tips h3{ height:80px; line-height: 80px; border-bottom: 1px solid #919da7; color: #FFFFFF; font-size:30px;}
+.SC_Tips h3{ height:80px; line-height: 80px; border-bottom: 1px solid rgba(255,255,255,0.3); color: #FFFFFF; font-size:30px;}
 .SC_Tips h3 span{ border-left: 5px solid #5abda3; padding: 0 20px;}
 .SC_Tips p{ color: #FFFFFF; font-size: 28px; padding: 20px 0;}
 .SC_result{ position: absolute; width: 465px; min-height:100px; max-height: 300px; left: 0; top: 0; right: 0; bottom: 0; margin: auto; padding:300px 0 0 1345px}
-.SC_result h3{ height:80px; line-height: 80px; border-bottom: 1px solid #919da7; color: #FFFFFF; font-size:30px;}
+.SC_result h3{ height:80px; line-height: 80px; border-bottom: 1px solid rgba(255,255,255,0.3); color: #FFFFFF; font-size:30px;}
 .SC_result h3 span{ border-left: 5px solid #5abda3; padding: 0 20px;}
 .SC_result dl{ font-size:28px; color: #FFFFFF; padding: 20px;}
 .SC_result dl dt{ float: left; width: 188px; overflow: hidden; white-space: nowrap;}
@@ -69,12 +69,14 @@
 .SC_timetableLeftMine{ padding:0 50px 50px;}
 .SC_timetableLeft h3{ height: 80px; line-height: 80px; margin: 0 0 20px; color: #FFFFFF; font-size:30px; font-weight: normal;}
 .SC_timetableLeft h3 span{border-left: 5px solid #5abda3; padding: 0 20px;}
-.SC_tableStyle{ border: 1px solid #919da7; background: rgba(0,0,0,0.1); border-collapse: collapse;}
-.SC_tableStyle th{ background: #3b5c77; color: #FFFFFF; height:80px; font-size: 24px; font-weight: normal;}
+.SC_tableStyle{ background: rgba(0,0,0,0.1); border-collapse: collapse;}
+.SC_tableStyle th{ background: #3b5c77; color: #FFFFFF; height:80px; font-size: 28px; font-weight: normal;}
 .SC_tableStyle td{ text-align: center; color: #FFFFFF; height: 87px; font-size: 25px;}
 .SC_tableStyle td a{ color:#5aaae0;}
 .SC_tableStyle td em.biaoshi{ display: inline-block; border: 1px solid rgba(255,255,255,0.3)}
 .SC_tableStyle_borderLine th,.SC_tableStyle_borderLine td{ border: 1px solid #919da7;}
+.SC_gbNone{ background: none;}
+.SC_bg1{background: #35566e;}
 
 .SC_tableStyle1{ border: 1px solid #919da7; border-collapse: collapse;}
 .SC_tableStyle1 th{ background: #3b5c77; color: #FFFFFF; height:80px; font-size: 24px; font-weight: normal;}
@@ -94,13 +96,13 @@
 .SC_activityBox{ float:left; width: 417px; background: #ffffff; margin: 0 0 50px 50px; border-radius: 5px; overflow: hidden;}
 .SC_activityBox .activityImg{ width: 417px; height: 267px;}
 .SC_activityBox .activityImg img{ width: 100%; height: 100%;}
-.SC_activityBox .activityDescribe .useImg{ float: left; width: 60px; height: 60px; overflow: hidden; border-radius: 50%; margin: 10px;}
+.SC_activityBox .activityDescribe .useImg{ float: left; width: 70px; height: 70px; overflow: hidden; border-radius: 50%; margin:10px;}
 .SC_activityBox .activityDescribe .useImg img{ width: 100%; height: 100%;}
 .SC_activityBox .activityDescribe .activityCon{ overflow: hidden;}
-.SC_activityBox .activityDescribe .activityCon h4{ font-size:26px; color: #333333; padding: 10px 0;}
-.SC_activityBox .activityDescribe .activityCon p{ margin: 0 0 10px; height: 40px; line-height: 40px; overflow: hidden; font-size: 24px; white-space: nowrap; text-overflow: ellipsis; color: #666666;}
-.SC_activityBox .activityDescribe .activityCon .participants{ height: 60px;}
-.SC_activityBox .activityDescribe .activityCon .participants span{ float: left; margin: 13px 10px 0 0; color:#999999; font-size:22px;}
+.SC_activityBox .activityDescribe .activityCon h4{ font-size:26px; color: #333333; padding: 10px 0 0;}
+.SC_activityBox .activityDescribe .activityCon p{ /*margin: 0 0 10px;*/ height: 40px; line-height: 40px; overflow: hidden; font-size: 23px; white-space: nowrap; text-overflow: ellipsis; color: #666666;}
+.SC_activityBox .activityDescribe .activityCon .participants{ height: 45px;}
+.SC_activityBox .activityDescribe .activityCon .participants span{ float: left; color:#999999; font-size:22px;}
 .SC_activityBox .activityDescribe .activityCon .participants .participantsList{ overflow: hidden; padding: 0 0 10px;}
 .SC_activityBox .activityDescribe .activityCon .participants .participantsList a{ float: left; width: 50px; height: 50px; border-radius: 50%; overflow: hidden; margin: 0 10px 0 0; position: relative;}
 .SC_activityBox .activityDescribe .activityCon .participants .participantsList a span{ position: absolute; display: block; left: 0; top: 0; right: 0; bottom: 0; margin: auto; border-radius: 50%; background: rgba(0,0,0,0.6); color: #FFFFFF; text-align: center; line-height: 50px; font-size: 24px}
@@ -111,7 +113,7 @@
 .SC_classExaminationM h3 span{ border-left: 5px solid #ed974b; padding: 0 20px;}
 .SC_classExaminationM .history{ padding: 0 50px; font-size:26px; color: #5ab9a3;}
 .SC_rankingList{ float: right; background: rgba(0,0,0,0.1); width: 560px; margin: 20px 50px 0;}
-.SC_rankingList h4{ border-bottom: 1px solid #eaeaea; height: 80px; line-height: 80px;}
+.SC_rankingList h4{ border-bottom: 1px solid rgba(255,255,255,0.3); height: 80px; line-height: 80px;}
 .SC_rankingList h4 span{ float: left;  width: 50%; text-align: center; color: #ffffff; font-size:28px; font-weight: normal;}
 .SC_rankingList h4 span.on{ color: #F7AC01;}
 .SC_rankingList .rankingListM ul{padding: 20px 0; height: 640px; overflow: hidden; overflow-y: auto;}
@@ -121,8 +123,9 @@
 .SC_rankingList .rankingListM ul li:nth-child(1) p{background: url(../images/NO1_03.png) no-repeat scroll 20px  center}
 .SC_rankingList .rankingListM ul li:nth-child(2) p{background: url(../images/NO2_06.png) no-repeat scroll 20px center}
 .SC_rankingList .rankingListM ul li:nth-child(3) p{background: url(../images/NO3_09.png) no-repeat scroll 20px center}
-.SC_inspectTable{ overflow: hidden; margin: 20px 0 0 50px; position: relative; height: 760px;}
-.SC_inspectTable .fixTop{ position: absolute; top:0; left:0; right: 0; bottom: auto; margin: auto;}
+.SC_inspectTable{ overflow: hidden; margin: 20px 0 0 50px; position: relative; height: 760px; background: rgba(0,0,0,0.1);}
+.SC_inspectTable .fixTop{ position: absolute; top:-1px; left:0; right: 0; bottom: auto; margin: auto;}
+.SC_inspectTable .fixBottom{ position: absolute; top:auto; left:0; right: 0; bottom:-1px; margin: auto;}
 .SC_inspectTable .tableScroll{ height: 100%; overflow: hidden; overflow-y: auto;}
 
 /*班级空间内容*/
@@ -209,7 +212,7 @@
 .SC_appList .appList_1 h4 span{ border-left: 5px solid #ed974b; padding: 0 20px;}
 .SC_appList .appBox dl{ float: left; width: 160px; text-align: center; color: #ffffff; margin:20px 0 20px 100px;}
 .SC_appList .appBox dl dt{ position: relative; width:160px; height: 160px; background: rgba(0,0,0,0.1); border-radius: 50%; overflow: hidden;}
-.SC_appList .appBox dl dt img{ width: 105px; height: 105px; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
+.SC_appList .appBox dl dt img{ width: 80px; height: 80px; position: absolute; left: 0; top: 0; right: 0; bottom: 0; margin: auto;}
 .SC_appList .appBox dl dd{ font-size: 28px; padding: 20px 0;}
 .SC_LeftLogin{ padding: 0 50px; margin: 50px 0 0;}
 .SC_LeftLogin .userImg{ float:left; margin: 0 20px 0 0;}
@@ -299,7 +302,8 @@
 .SC_indexMessage .leftHD ul{ font-size: 0; white-space: nowrap;}
 .SC_indexMessage .leftHD ul li{ display:inline-block; width: 862px; height: 525px;}
 .SC_indexMessage .leftHD ul li img{ width: 100%; height: 100%;}
-.SC_indexMessage .leftHD .imgtitle{ position: absolute; left: 0; top: auto; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.5); color: #FFFFFF; font-size: 24px; padding:20px 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.SC_indexMessage .leftHD .imgtitle{ position: absolute; text-align: right; left: 0; top: auto; right: 0; bottom: 0; margin: auto; background: rgba(0,0,0,0.5); color: #FFFFFF; font-size: 24px; padding:20px 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.SC_indexMessage .leftHD .imgtitle p{ float: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; width: 65%; text-align:justify;}
 
 .SC_indexMessage .leftHD1{ float: left; width:1015px; height: 630px; overflow: hidden; position: relative; margin: 0 20px 0 0;}
 .SC_indexMessage .leftHD1 ul{ font-size: 0; white-space: nowrap;}
@@ -392,7 +396,7 @@
 .SC_indexMessage .leaveMessageList .tabTop a{ color: #d16f6c; font-size:24px; padding: 0 20px; }
 .SC_indexMessage .leaveMessageList .tabTop span{ float: left; color: #FFFFFF; box-sizing: border-box; padding:0 20px; margin: 0 10px; cursor: pointer;}
 .SC_indexMessage .leaveMessageList .tabTop span.on{ color: #d16f6c; height: 67px; line-height: 67px; border-bottom: 3px solid #d16f6c; font-weight: bold;}
-.SC_indexMessage .leaveMessageList .tabTop em{ color: #ed974c; float: left; font-size: 22px;}
+.SC_indexMessage .leaveMessageList .tabTop em{ color: #ed974c; float: left; font-size: 22px; padding: 0 0 0 50px;}
 .SC_indexMessage .leaveMessageListBox{ white-space: nowrap;}
 .SC_indexMessage .leaveMessageListBox ul{display: inline-block; width: 100%; box-sizing: border-box; padding: 0 20px; height: 485px; overflow: hidden; overflow-y: auto;}
 .SC_indexMessage .leaveMessageListBox ul li{ color: #FFFFFF; text-align: right; font-size: 24px; height: 60px; line-height: 60px;}
@@ -412,6 +416,28 @@
 .SC_classList .classBox h4 span{color: #FFFFFF; border-left: 3px solid #59b8a0; padding: 0 10px;}
 .SC_classList .classBox a{ float: left; font-size: 24px; position: relative; background: #ed974c; color: #FFFFFF; height: 60px; line-height: 60px; width:225px; text-align: center; margin: 0 0 30px 30px; border-radius: 50px;}
 .SC_classList .classBox a em{position: absolute; right:-15px; top:-20px; width: 50px; height: 50px; line-height: 50px; text-align: center;background: #cf706c; color:#FFFFFF; border-radius: 50%; overflow: hidden; font-size: 18px;}
+
+/* 屏保页面 */
+.SC_Screensaver{ margin: 30px;}
+.SC_Screensaver .screenTop{ margin: 0 0 30px;}
+.SC_Screensaver .screenTop .collectiveImg{ float: left; margin: 0 30px 0 0;}
+
+.SC_Screensaver .screenTop .screenTopRight{ overflow: hidden;}
+.SC_Screensaver .screenTop .classSynopsis{ background: rgba(0,0,0,0.1); margin: 0 0 30px; padding: 30px;}
+.SC_Screensaver .screenTop .classSynopsis .classLogo{ float: left; margin: 0 30px 0 0;  height: 100px; width: 100px; border-radius: 50%; overflow: hidden;}
+.SC_Screensaver .screenTop .classSynopsis .classLogo img{ width: 100%; height: 100%;}
+.SC_Screensaver .screenTop .classSynopsis h3{ color: #5bbea2; font-size: 32px; padding: 10px 0;}
+.SC_Screensaver .screenTop .classSynopsis p span{ display: inline-block; text-align: center; padding: 0 40px 0 0; color: #FFFFFF; font-size: 24px;}
+.SC_Screensaver .screenTop .classMasterMessage{ background: rgba(0,0,0,0.1);}
+.SC_Screensaver .screenTop .classMasterMessage h4{ height: 80px; line-height: 80px; padding: 0 20px;}
+.SC_Screensaver .screenTop .classMasterMessage h4 span{ color: #ee974a; border-left: 3px solid #ee974a; padding: 0 10px; font-size: 26px;}
+.SC_Screensaver .screenTop .classMasterMessage .classMasterMessageCon{ padding: 0 20px 20px; font-size:24px; line-height: 2em;  color: #FFFFFF; height: 400px; overflow: hidden; overflow-y:auto;}
+
+.SC_Screensaver .screenBottom .screenBottomBox{ background:rgba(0,0,0,0.1); float: left; width: 915px;}
+.SC_Screensaver .screenBottom .screenBottomBox h4{ height:80px; line-height: 80px; padding: 0 20px;}
+.SC_Screensaver .screenBottom .screenBottomBox h4 span{color: #61aadf; border-left: 3px solid #61aadf; font-size: 26px; padding: 0 10px;}
+.SC_Screensaver .screenBottom .screenBottomBox .screenBottomBoxCon{ padding: 0 20px 20px; color: #FFFFFF; font-size: 24px; height: 200px; overflow: hidden; overflow-y: auto;}
+.SC_Screensaver .screenBottom .screenBottomBox .screenBottomBoxCon p{ line-height: 1.5em;}
 
 /* 通知列表 */
 .SC_notifyList ul{ margin: 0 50px; padding: 20px 40px; background: rgba(0,0,0,0.1); height: 790px; overflow: hidden; overflow-y: auto;}
