@@ -85,6 +85,9 @@ const routes = [
   },{
     path:'/screensaver',
     component:resolve => require(['@/components/screensaver'],resolve)
+  },{
+    path:'/gradeSignIn',
+    component:resolve => require(['@/components/gradeSignIn'],resolve)
   }
   
   

@@ -55,11 +55,18 @@ import $ from 'jquery'
         name: "homeWork",
         mounted(){
           this.tabchang();
+          this.topCho();
         },
         methods:{
             tabchang:function () {
                 $(".SC_tableStyle1 tr th:nth-child(1)").css({"text-align":"left","padding":"0 0 0 20px"});
                 $(".SC_tableStyle1 tr td:nth-child(1)").css({"text-align":"left","padding":"0 0 0 20px"});
+            },
+            topCho:function(){
+                $(".homeworkTop span").first().addClass("on");
+                $(".homeworkTop span").click(function(){
+                    $(this).addClass("on").siblings().removeClass("on");
+                })
             }
         }
 

@@ -49,7 +49,7 @@
         <div class="leaveMessageList">
             <div class="tabTop"><span>班级通知</span><span>班级留言</span><em>请过往的同学相互转告</em><a href="">更多</a></div>
             <div class="leaveMessageListBox">
-                <ul>
+                <ul class="xpNoticeList">
                     <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
                     <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
                     <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
@@ -64,13 +64,59 @@
                     <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
                 </ul>
 
-                 <ul>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
-                    <li><p><em>四年级一班</em>请班长下课来班主任办公室一趟</p><span>09-13</span><span>24:56</span></li>
+                 <ul class="xpLeavemessageList">
+                   <li>
+                     <div class="gradeLeaveBox">
+                     <h4>一年级</h4>
+                     <div class="gradeLeaveBoxN">
+                       <a href="">张洋（3班）</a><a href="">王胡塞（1班）</a><a href="">张威（3班）</a>
+                     </div>
+                     </div>
+                   </li>
+                   <li>
+                     <div class="gradeLeaveBox">
+                     <h4>二年级</h4>
+                     <div class="gradeLeaveBoxN">
+                       <a href="">张洋（3班）</a><a href="">王胡塞（1班）</a><a href="">张威（3班）</a>
+                     </div>
+                     </div>
+                   </li>
+
+                   <li>
+                     <div class="gradeLeaveBox">
+                     <h4>三年级</h4>
+                     <div class="gradeLeaveBoxN">
+                       <a href="">张洋（3班）</a><a href="">王胡塞（1班）</a><a href="">张威（3班）</a>
+                     </div>
+                     </div>
+                   </li>
+
+                   <li>
+                     <div class="gradeLeaveBox">
+                     <h4>四年级</h4>
+                     <div class="gradeLeaveBoxN">
+                       <a href="">张洋（3班）</a><a href="">王胡塞（1班）</a><a href="">张威（3班）</a><a href="">张洋（3班）</a><a href="">王胡塞（1班）</a><a href="">张威（3班）</a>
+                     </div>
+                     </div>
+                   </li>
+
+                   <li>
+                     <div class="gradeLeaveBox">
+                     <h4>五年级</h4>
+                     <div class="gradeLeaveBoxN">
+                       <a href="">张洋（3班）</a><a href="">王胡塞（1班）</a><a href="">张威（3班）</a>
+                     </div>
+                     </div>
+                   </li>
+
+                   <li>
+                     <div class="gradeLeaveBox">
+                     <h4>六年级</h4>
+                     <div class="gradeLeaveBoxN">
+                       <a href="">张洋（3班）</a><a href="">王胡塞（1班）</a><a href="">张威（3班）</a>
+                     </div>
+                     </div>
+                   </li>
                 </ul>
             </div>
         </div>
@@ -107,6 +153,7 @@ data(){
     this.jishi();
     this.gundong();
     this.tabChange();
+    this.timeClike();
 },
 methods:{
     localTime:function () {
@@ -201,6 +248,15 @@ methods:{
               }
               console.log(thisIndex);
             })
+          },
+          timeClike:function(){
+            function sjdj(){
+            let Number = 0; 
+            // setTimeout(function(){
+              $(".tabTop span").not($(".on")[0]).trigger("click");
+            // },5000);
+            }
+            setInterval(sjdj,15000);
           }
 }
 }

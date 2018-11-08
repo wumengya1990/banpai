@@ -24,7 +24,7 @@
       <router-link active-class="on" to="/scHomePage">校牌首页</router-link>
       <router-link active-class="on" to="/classList">班级列表</router-link>
       <router-link active-class="on" to="/screensaver">屏幕保护</router-link>
-      
+      <router-link active-class="on" to="/gradeSignIn">校牌签到</router-link>
     </div>
 </template>
 
