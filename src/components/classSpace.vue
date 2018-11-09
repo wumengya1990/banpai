@@ -9,7 +9,7 @@
             <div class="SC_LeaveMessageBox" v-for="(zhu , index) in spaceList">
               <div class="userHead">
                 <div class="userImg"><img :src="zhu.userImg"></div>
-                <h4>{{zhu.userName}}</h4>
+                <h4>{{zhu.userName}}{{index}}</h4>
                 <p>{{zhu.userSentTime}}</p>
                 <div class="clear"></div>
               </div>
@@ -27,11 +27,11 @@
               </div>
 
               <div class="leaveBox">
-                <div class="leaveBoxCon" v-for="(back , index) in zhu.backPeoList" v-if="index < 2">
+                <div class="leaveBoxCon" v-for="(back , indexn) in zhu.backPeoList" v-show="indexn < listnumber[index]">
                   <div class="commenter">
                     <div class="touxiang"><img :src="back.backPeoImg"></div>
                     <div class="touxiangMes">
-                    <h4>{{back.backPeoName}}</h4>
+                    <h4>{{back.backPeoName}}{{index}}</h4>
                     <p>{{back.backPeoTime}}</p>
                     </div>
                   </div>
@@ -43,7 +43,7 @@
 
               
               <div class="moreMessage">
-                <a @click="shouMore()" href="javascript:void(0);">查看更多评论</a>
+                <a @click="shouMore(index)" href="javascript:void(0);">{{txt}}</a>
               </div>
 
               </div>
@@ -65,8 +65,13 @@
         components:{top},
         data(){
           return{
+            // isShow: true,
+            txt: '显示全部',
+            num:2,
+            listnumber:[],
             spaceList:[
               { 
+                isShown: true,
                 userImg:'../../static/images/userImg_03.png',
                 userName:'张洋',
                 userSentTime:'一周前',
@@ -102,6 +107,7 @@
                 ]
               },
               { 
+                isShown: true,
                 userImg:'../../static/images/userImg_03.png',
                 userName:'章程',
                 userSentTime:'2周前',
@@ -128,11 +134,6 @@
                     backPeoName:'王帅',
                     backPeoTime:'19:09',
                     backPeoMessage:'回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2'
-                  },{
-                    backPeoImg:'../../static/images/userImg_03.png',
-                    backPeoName:'王帅',
-                    backPeoTime:'19:09',
-                    backPeoMessage:'回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2'
                   }
                 ]
               }
@@ -140,9 +141,23 @@
           }
         },
         methods:{
-          shouMore:function(){
-            console.log(this.back)
+          shouMore:function(c){
+          // var arr1 = [];
+          // for( var i =0; i < this.spaceList.length; i++ ){
+          //   this.listnumber[i] = 3
+          // }
+          // console.log('1', this.spaceList[c].isShown);
+          this.spaceList[c].isShown = ! this.spaceList[c].isShown;
+          // console.log('2', this.spaceList[c].isShown);
+          this.num = this.spaceList[c].isShown? 3 : this.spaceList[c].backPeoList.length;
+          this.txt = this.spaceList[c].isShown?  '显示全部':'收起';
           }
+        },
+        mounted() {
+          for( var i =0; i < this.spaceList.length; i++ ){
+            this.listnumber[i] = 2
+          }
+          console.log(this.listnumber);
         }
     }
 </script>
