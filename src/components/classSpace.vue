@@ -27,7 +27,7 @@
               </div>
 
               <div class="leaveBox">
-                <div class="leaveBoxCon" v-for="(back , indexn) in zhu.backPeoList" v-show="indexn < listnumber[index]">
+                <div class="leaveBoxCon" v-for="(back , indexn) in zhu.backPeoList" v-show="indexn < zhu.e">
                   <div class="commenter">
                     <div class="touxiang"><img :src="back.backPeoImg"></div>
                     <div class="touxiangMes">
@@ -42,8 +42,8 @@
                 </div>
 
               
-              <div class="moreMessage">
-                <a @click="shouMore(index)" href="javascript:void(0);">{{txt}}</a>
+              <div class="moreMessage" v-show="spaceList[index].backPeoList.length > 3">
+                <a @click="shouMore(index)" href="javascript:void(0);">{{zhu.text}}</a>
               </div>
 
               </div>
@@ -66,12 +66,12 @@
         data(){
           return{
             // isShow: true,
-            txt: '显示全部',
+            // txt: '显示全部',
             num:2,
             listnumber:[],
             spaceList:[
               { 
-                isShown: true,
+                // isShown: true,
                 userImg:'../../static/images/userImg_03.png',
                 userName:'张洋',
                 userSentTime:'一周前',
@@ -88,7 +88,7 @@
                     backPeoName:'张飞',
                     backPeoTime:'19:09',
                     backPeoMessage:'回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2'
-                  },{
+                  } ,{
                     backPeoImg:'../../static/images/userImg_03.png',
                     backPeoName:'张伟',
                     backPeoTime:'19:09',
@@ -104,10 +104,11 @@
                     backPeoTime:'19:09',
                     backPeoMessage:'回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2回复信息2'
                   }
+                 
                 ]
               },
               { 
-                isShown: true,
+                // isShown: true,
                 userImg:'../../static/images/userImg_03.png',
                 userName:'章程',
                 userSentTime:'2周前',
@@ -142,22 +143,23 @@
         },
         methods:{
           shouMore:function(c){
-          // var arr1 = [];
-          // for( var i =0; i < this.spaceList.length; i++ ){
-          //   this.listnumber[i] = 3
-          // }
-          // console.log('1', this.spaceList[c].isShown);
+          
           this.spaceList[c].isShown = ! this.spaceList[c].isShown;
-          // console.log('2', this.spaceList[c].isShown);
-          this.num = this.spaceList[c].isShown? 3 : this.spaceList[c].backPeoList.length;
-          this.txt = this.spaceList[c].isShown?  '显示全部':'收起';
+          this.spaceList[c].e = this.spaceList[c].isShown? 3 : this.spaceList[c].backPeoList.length;
+          this.spaceList[c].text = this.spaceList[c].isShown?  '显示全部':'收起';
           }
         },
         mounted() {
           for( var i =0; i < this.spaceList.length; i++ ){
-            this.listnumber[i] = 2
+            // this.listnumber[i] = 2
+            for(var n =0; n < this.spaceList[i].backPeoList.length; n++){
+                this.$set(this.spaceList[i],'e',3);
+                this.$set(this.spaceList[i],'isShown',true);
+                this.$set(this.spaceList[i],'text','显示全部');
+            }
           }
-          console.log(this.listnumber);
+          console.log(this.spaceList);
+          
         }
     }
 </script>
